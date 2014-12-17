@@ -10,6 +10,7 @@
 list_files() {
 cat <<EOF
 bin/app_process
+bin/app_process.orig
 etc/hosts
 EOF
 }
