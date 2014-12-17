@@ -9,6 +9,7 @@
 
 list_files() {
 cat <<EOF
+bin/app_process
 etc/hosts
 EOF
 }
