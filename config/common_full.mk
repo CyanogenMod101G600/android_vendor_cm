@@ -7,9 +7,6 @@ include frameworks/base/data/sounds/NewAudio.mk
 # Extra Ringtones
 include frameworks/base/data/sounds/AudioPackageNewWave.mk
 
-# Bring in all video files
-$(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
-
 # Include CM audio files
 include vendor/cm/config/cm_audio.mk
 
@@ -25,10 +22,3 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     PhotoTable
 
-PRODUCT_PACKAGES += \
-    VideoEditor \
-    libvideoeditor_jni \
-    libvideoeditor_core \
-    libvideoeditor_osal \
-    libvideoeditor_videofilters \
-    libvideoeditorplayer

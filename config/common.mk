@@ -139,25 +139,15 @@ PRODUCT_PACKAGES += \
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    VoicePlus \
-    VoiceDialer \
     SoundRecorder \
     Basic
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
     Trebuchet \
-    DSPManager \
-    libcyanogen-dsp \
-    audio_effects.conf \
     CMWallpapers \
     Apollo \
-    CMFileManager \
-    LockClock \
-    CMAccount
-
-PRODUCT_PACKAGES += \
-    CellBroadcastReceiver
+    CMFileManager
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
@@ -202,14 +192,8 @@ PRODUCT_PACKAGES += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
 
 PRODUCT_PACKAGES += \
-    CMUpdater \
     Superuser \
     su
-
-# Terminal Emulator
-PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
