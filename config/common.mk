@@ -128,6 +128,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
+# NovaLauncher
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
+
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
 
@@ -144,7 +148,6 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    Trebuchet \
     CMWallpapers \
     Apollo \
     CMFileManager
@@ -252,7 +255,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL
+    CM_BUILDTYPE := FONZ93
     CM_EXTRAVERSION :=
 endif
 
